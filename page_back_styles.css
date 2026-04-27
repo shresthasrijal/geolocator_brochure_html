@@ -360,7 +360,7 @@ body {
 
 /* HERO TEXT */
 .hero {
-  margin-bottom: auto;
+  margin-bottom: 32px;
 }
 
 .hero h2 {
@@ -402,7 +402,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
-  margin-bottom: auto;
+  margin-bottom: 32px;
 }
 
 .price-card {
@@ -451,7 +451,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin-bottom: auto;
+  margin-bottom: 28px;
 }
 
 .feature-block {
@@ -538,7 +538,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  margin-bottom: auto;
+  margin-bottom: 32px;
 }
 
 .why-card {
@@ -673,6 +673,10 @@ body {
     box-shadow: none;
     border: none;
     min-height: unset;
+  }
+
+  .hero, .pricing-grid, .features-grid, .why-grid {
+    margin-bottom: auto !important;
   }
 
   .hero-section::after,
