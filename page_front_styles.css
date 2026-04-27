@@ -627,6 +627,10 @@ body {
 
 /* PRINT OPTIMIZATIONS */
 @media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
   body {
     background: #fff;
     padding: 0;
@@ -638,13 +642,9 @@ body {
     box-shadow: none;
     border: none;
     width: 210mm;
-    min-height: 297mm;
+    height: 297mm;
     margin: 0;
-  }
-
-  .dashboard-frame img,
-  .phone-frame img {
-    filter: grayscale(100%) contrast(1.15) brightness(0.95);
+    overflow: hidden;
   }
 
   .hero-section::after,

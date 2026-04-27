@@ -605,6 +605,10 @@ body {
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
   body {
     background: white;
     padding: 0;
@@ -616,8 +620,9 @@ body {
     box-shadow: none;
     border: none;
     width: 210mm;
-    min-height: 297mm;
+    height: 297mm;
     margin: 0;
+    overflow: hidden;
   }
 
   .a4::before,
@@ -631,8 +636,5 @@ body {
     break-inside: avoid;
   }
 
-  .dashboard-frame img,
-  .phone-frame img {
-    filter: grayscale(100%) contrast(1.15) brightness(0.95);
-  }
+
 }
