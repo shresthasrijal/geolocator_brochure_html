@@ -5,9 +5,11 @@
   --shadow-a4: 0 2px 12px rgba(0, 0, 0, 0.08);
   --bg-hero: linear-gradient(160deg, #fff 0%, #fffaf0 40%, #fff9f0 100%);
   --border-hero: #e8e8e8;
-  --bg-hero-glow: radial-gradient(circle,
-      rgba(0, 0, 0, 0.03) 0%,
-      transparent 65%);
+  --bg-hero-glow: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.03) 0%,
+    transparent 65%
+  );
   --text-main: #1a1a1a;
   --text-muted: #555;
   --text-light: #666;
@@ -57,13 +59,17 @@
   /* Additional back-page specific vars placed here so both files share one identical root */
   --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(circle,
-      rgba(0, 0, 0, 0.02) 0%,
-      transparent 70%);
-  --bg-a4-after: radial-gradient(circle,
-      rgba(0, 0, 0, 0.02) 0%,
-      transparent 70%);
-  --text-tagline: #555;
+  --bg-a4-before: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.02) 0%,
+    transparent 70%
+  );
+  --bg-a4-after: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.02) 0%,
+    transparent 70%
+  );
+  --text-tagline: #dddfe4;
   --bg-divider: #e0e0e0;
   --text-section-label: #444;
   --border-section-label: #e8e8e8;
@@ -112,9 +118,11 @@
   --shadow-a4: none;
   --bg-hero: linear-gradient(160deg, #0d1528 0%, #0b1020 40%, #0b0d1a 100%);
   --border-hero: transparent;
-  --bg-hero-glow: radial-gradient(circle,
-      rgba(0, 220, 150, 0.08) 0%,
-      transparent 65%);
+  --bg-hero-glow: radial-gradient(
+    circle,
+    rgba(0, 220, 150, 0.08) 0%,
+    transparent 65%
+  );
   --text-main: #ffffff;
   --text-muted: #7a8ba8;
   --text-light: #8a9bb8;
@@ -129,7 +137,7 @@
   --text-h1: #ffffff;
   --text-h1-em: #00dc96;
   --text-h2: #ffffff;
-  --text-p: #7a8ba8;
+  --text-p: #dbdde0;
   --text-stat-num: #ffffff;
   --text-stat-num-span: #00dc96;
   --text-stat-label: #8a9bb8;
@@ -154,9 +162,11 @@
   --border-pill: rgba(255, 255, 255, 0.08);
   --text-pill: #7a8ba8;
   --dot-pill: #00dc96;
-  --bg-strip: linear-gradient(90deg,
-      rgba(0, 220, 150, 0.12) 0%,
-      rgba(0, 184, 200, 0.08) 100%);
+  --bg-strip: linear-gradient(
+    90deg,
+    rgba(0, 220, 150, 0.12) 0%,
+    rgba(0, 184, 200, 0.08) 100%
+  );
   --border-strip: rgba(0, 220, 150, 0.18);
   --text-strip-left: #c8d5e8;
   --text-strip-strong: #00dc96;
@@ -166,27 +176,33 @@
   --text-platform: #3a4a62;
   --bg-pin: linear-gradient(135deg, #00dc96, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(circle,
-      rgba(0, 220, 150, 0.1) 0%,
-      transparent 70%);
-  --bg-a4-after: radial-gradient(circle,
-      rgba(60, 120, 255, 0.1) 0%,
-      transparent 70%);
-  --text-tagline: #8a9bb8;
-  --bg-divider: linear-gradient(90deg,
-      #00dc96 0%,
-      rgba(0, 220, 150, 0.1) 60%,
-      transparent 100%);
+  --bg-a4-before: radial-gradient(
+    circle,
+    rgba(0, 220, 150, 0.1) 0%,
+    transparent 70%
+  );
+  --bg-a4-after: radial-gradient(
+    circle,
+    rgba(60, 120, 255, 0.1) 0%,
+    transparent 70%
+  );
+  --text-tagline: #cfd2d8;
+  --bg-divider: linear-gradient(
+    90deg,
+    #00dc96 0%,
+    rgba(0, 220, 150, 0.1) 60%,
+    transparent 100%
+  );
   --text-section-label: #00dc96;
   --border-section-label: transparent;
   --bg-price-card: rgba(255, 255, 255, 0.04);
   --border-price-card: rgba(255, 255, 255, 0.08);
   --bg-price-card-feat: rgba(0, 220, 150, 0.08);
   --border-price-card-feat: rgba(0, 220, 150, 0.3);
-  --text-price-tier: #8a9bb8;
+  --text-price-tier: #b8ccec;
   --text-price-amount: #ffffff;
   --text-price-amount-feat: #00dc96;
-  --text-price-unit: #8a9bb8;
+  --text-price-unit: #b8ccec;
   --bg-feat-badge: #00dc96;
   --text-feat-badge: #0b0d1a;
   --bg-feature-block: rgba(255, 255, 255, 0.03);
@@ -195,8 +211,8 @@
   --bg-block-icon-web: rgba(60, 120, 255, 0.15);
   --bg-block-icon-mob: rgba(0, 220, 150, 0.12);
   --border-block-icon: transparent;
-  --text-feature-sub: #8a9bb8;
-  --text-feat-list: #8a9bb8;
+  --text-feature-sub: #bdbdbd;
+  --text-feat-list: #e7e7e7;
   --dot-feat-list: #00dc96;
   --text-feat-strong: #c8d5e8;
   --bg-why-card: rgba(255, 255, 255, 0.03);
@@ -204,12 +220,12 @@
   --bg-why-icon: #0caa78;
   --border-why-icon: transparent;
   --text-why-icon: #00dc96;
-  --text-why-p: #7a8ba8;
-  --text-why-strong: #c8d5e8;
+  --text-why-p: #c8d5e8;
+  --text-why-strong: #fff;
   --border-footer: rgba(255, 255, 255, 0.06);
   --text-footer-left: #ffffff;
   --text-footer-span: #00dc96;
-  --text-footer-right: #8a9bb8;
+  --text-footer-right: #ffffff;
   --text-footer-right-bold: #d1cbcb;
   --bg-cta-pill: linear-gradient(135deg, #00dc96, #00b8c8);
   --text-cta-pill: #0b0d1a;
@@ -280,7 +296,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
 .logo-block {
@@ -329,7 +345,7 @@ body {
 }
 
 .tagline {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-tagline);
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -355,7 +371,7 @@ body {
 .divider {
   height: 1px;
   background: var(--bg-divider);
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 /* HERO TEXT */
@@ -365,7 +381,7 @@ body {
 
 .hero h2 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--text-h2);
   margin-bottom: 8px;
@@ -373,17 +389,17 @@ body {
 }
 
 .hero p {
-  font-size: 13.5px;
+  font-size: 15px;
   color: var(--text-p);
   line-height: 1.65;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 /* PRICING */
 .section-label {
   font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(10px, 0.9vh, 16px);
-  font-weight: 600;
+  font-size: clamp(12px, 0.9vh, 16px);
+  font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--text-section-label);
@@ -463,7 +479,7 @@ body {
 
 .feature-block-title {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text-feature-title);
   margin-bottom: 4px;
@@ -496,7 +512,7 @@ body {
 }
 
 .feature-block-sub {
-  font-size: 10.5px;
+  font-size: 12.5px;
   color: var(--text-feature-sub);
   margin-bottom: 14px;
   padding-left: 30px;
@@ -564,7 +580,7 @@ body {
 }
 
 .why-card p {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--text-why-p);
   line-height: 1.4;
   font-weight: 400;
@@ -573,7 +589,7 @@ body {
 .why-card strong {
   display: block;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-why-strong);
   font-weight: 600;
   margin-bottom: 3px;
@@ -590,6 +606,7 @@ body {
 }
 
 .footer-left {
+  line-height: 1.5;
   font-family: "Space Grotesk", sans-serif;
   font-size: 13px;
   color: var(--text-footer-left);
@@ -601,7 +618,7 @@ body {
 }
 
 .footer-right {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text-footer-right);
   text-align: right;
   line-height: 1.5;
@@ -675,7 +692,10 @@ body {
     min-height: unset;
   }
 
-  .hero, .pricing-grid, .features-grid, .why-grid {
+  .hero,
+  .pricing-grid,
+  .features-grid,
+  .why-grid {
     margin-bottom: auto !important;
   }
 
