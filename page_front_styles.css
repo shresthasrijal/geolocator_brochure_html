@@ -5,7 +5,11 @@
   --shadow-a4: 0 2px 12px rgba(0, 0, 0, 0.08);
   --bg-hero: linear-gradient(160deg, #fff 0%, #fffaf0 40%, #fff9f0 100%);
   --border-hero: #e8e8e8;
-  --bg-hero-glow: radial-gradient(circle, rgba(0, 0, 0, 0.03) 0%, transparent 65%);
+  --bg-hero-glow: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.03) 0%,
+    transparent 65%
+  );
   --text-main: #1a1a1a;
   --text-muted: #555;
   --text-light: #666;
@@ -51,12 +55,18 @@
   --text-cta: #fff;
   --border-cta: #000;
   --text-platform: #444;
-  
-  /* Additional back-page specific vars placed here so both files share one identical root */
   --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
-  --bg-a4-after: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+  --bg-a4-before: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.02) 0%,
+    transparent 70%
+  );
+  --bg-a4-after: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.02) 0%,
+    transparent 70%
+  );
   --text-tagline: #555;
   --bg-divider: #e0e0e0;
   --text-section-label: #444;
@@ -100,73 +110,96 @@
 
 .dark {
   --bg-body: #0f0f14;
-  --bg-a4: #0B0D1A;
+  --bg-a4: #0b0d1a;
   --border-a4: transparent;
   --shadow-a4: none;
-  --bg-hero: linear-gradient(160deg, #0D1528 0%, #0B1020 40%, #0B0D1A 100%);
+  --bg-hero: linear-gradient(160deg, #0d1528 0%, #0b1020 40%, #0b0d1a 100%);
   --border-hero: transparent;
-  --bg-hero-glow: radial-gradient(circle, rgba(0,220,150,0.08) 0%, transparent 65%);
+  --bg-hero-glow: radial-gradient(
+    circle,
+    rgba(0, 220, 150, 0.08) 0%,
+    transparent 65%
+  );
   --text-main: #ffffff;
-  --text-muted: #7A8BA8;
-  --text-light: #4A5A72;
+  --text-muted: #7a8ba8;
+  --text-light: #8a9bb8;
   --text-brand: #ffffff;
-  --accent-primary: #00DC96;
-  --bg-live: rgba(0,220,150,0.12);
-  --border-live: rgba(0,220,150,0.25);
-  --text-live: #00DC96;
-  --dot-live: #00DC96;
-  --text-eyebrow: #00DC96;
+  --accent-primary: #00dc96;
+  --bg-live: rgba(0, 220, 150, 0.12);
+  --border-live: rgba(0, 220, 150, 0.25);
+  --text-live: #00dc96;
+  --dot-live: #00dc96;
+  --text-eyebrow: #00dc96;
   --border-eyebrow: transparent;
   --text-h1: #ffffff;
-  --text-h1-em: #00DC96;
+  --text-h1-em: #00dc96;
   --text-h2: #ffffff;
   --text-p: #7a8ba8;
   --text-stat-num: #ffffff;
-  --text-stat-num-span: #00DC96;
-  --text-stat-label: #4A5A72;
-  --border-stat-divider: rgba(255,255,255,0.08);
+  --text-stat-num-span: #00dc96;
+  --text-stat-label: #8a9bb8;
+  --border-stat-divider: rgba(255, 255, 255, 0.08);
   --bg-screens: transparent;
-  --text-screen-label: #3A4A62;
-  --border-screen-label: #3A4A62;
+  --text-screen-label: #b3b6b9;
+  --border-screen-label: #3a4a62;
   --bg-frame: #111827;
-  --border-frame: rgba(255,255,255,0.10);
-  --shadow-frame: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
-  --bg-frame-label: rgba(11,13,26,0.85);
-  --border-frame-label: rgba(255,255,255,0.10);
-  --text-frame-label: #7A8BA8;
+  --border-frame: rgba(255, 255, 255, 0.1);
+  --shadow-frame:
+    0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --bg-frame-label: rgba(11, 13, 26, 0.85);
+  --border-frame-label: rgba(255, 255, 255, 0.1);
+  --text-frame-label: #7a8ba8;
   --bg-phone: #1a1f2e;
-  --border-phone: rgba(255,255,255,0.12);
-  --shadow-phone: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 3px rgba(255,255,255,0.04);
+  --border-phone: rgba(255, 255, 255, 0.12);
+  --shadow-phone:
+    0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.04);
   --bg-notch: #1a1f2e;
   --border-notch: transparent;
-  --bg-pill: rgba(255,255,255,0.04);
-  --border-pill: rgba(255,255,255,0.08);
-  --text-pill: #7A8BA8;
-  --dot-pill: #00DC96;
-  --bg-strip: linear-gradient(90deg, rgba(0,220,150,0.12) 0%, rgba(0,184,200,0.08) 100%);
-  --border-strip: rgba(0,220,150,0.18);
-  --text-strip-left: #4A6A5A;
-  --text-strip-strong: #00DC96;
-  --bg-cta: #00DC96;
-  --text-cta: #0B0D1A;
+  --bg-pill: rgba(255, 255, 255, 0.04);
+  --border-pill: rgba(255, 255, 255, 0.08);
+  --text-pill: #aebdda;
+  --dot-pill: #00dc96;
+  --bg-strip: linear-gradient(
+    90deg,
+    rgba(0, 220, 150, 0.12) 0%,
+    rgba(0, 184, 200, 0.08) 100%
+  );
+  --border-strip: rgba(0, 220, 150, 0.18);
+  --text-strip-left: #c8d5e8;
+  --text-strip-strong: #00dc96;
+  --bg-cta: #00dc96;
+  --text-cta: #0b0d1a;
   --border-cta: transparent;
-  --text-platform: #3A4A62;
+  --text-platform: #a7aeb9;
   --bg-pin: linear-gradient(135deg, #00dc96, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(circle, rgba(0, 220, 150, 0.1) 0%, transparent 70%);
-  --bg-a4-after: radial-gradient(circle, rgba(60, 120, 255, 0.1) 0%, transparent 70%);
+  --bg-a4-before: radial-gradient(
+    circle,
+    rgba(0, 220, 150, 0.1) 0%,
+    transparent 70%
+  );
+  --bg-a4-after: radial-gradient(
+    circle,
+    rgba(60, 120, 255, 0.1) 0%,
+    transparent 70%
+  );
   --text-tagline: #8a9bb8;
-  --bg-divider: linear-gradient(90deg, #00dc96 0%, rgba(0, 220, 150, 0.1) 60%, transparent 100%);
+  --bg-divider: linear-gradient(
+    90deg,
+    #00dc96 0%,
+    rgba(0, 220, 150, 0.1) 60%,
+    transparent 100%
+  );
   --text-section-label: #00dc96;
   --border-section-label: transparent;
   --bg-price-card: rgba(255, 255, 255, 0.04);
   --border-price-card: rgba(255, 255, 255, 0.08);
   --bg-price-card-feat: rgba(0, 220, 150, 0.08);
   --border-price-card-feat: rgba(0, 220, 150, 0.3);
-  --text-price-tier: #6a7b95;
+  --text-price-tier: #8a9bb8;
   --text-price-amount: #ffffff;
   --text-price-amount-feat: #00dc96;
-  --text-price-unit: #5a6b82;
+  --text-price-unit: #8a9bb8;
   --bg-feat-badge: #00dc96;
   --text-feat-badge: #0b0d1a;
   --bg-feature-block: rgba(255, 255, 255, 0.03);
@@ -175,7 +208,7 @@
   --bg-block-icon-web: rgba(60, 120, 255, 0.15);
   --bg-block-icon-mob: rgba(0, 220, 150, 0.12);
   --border-block-icon: transparent;
-  --text-feature-sub: #4a5a72;
+  --text-feature-sub: #8a9bb8;
   --text-feat-list: #8a9bb8;
   --dot-feat-list: #00dc96;
   --text-feat-strong: #c8d5e8;
@@ -189,7 +222,7 @@
   --border-footer: rgba(255, 255, 255, 0.06);
   --text-footer-left: #ffffff;
   --text-footer-span: #00dc96;
-  --text-footer-right: #4a5a72;
+  --text-footer-right: #8a9bb8;
   --bg-cta-pill: linear-gradient(135deg, #00dc96, #00b8c8);
   --text-cta-pill: #0b0d1a;
   --border-cta-pill: transparent;
@@ -210,7 +243,9 @@ body {
   padding: 40px 20px;
   font-family: "DM Sans", sans-serif;
   color: var(--text-main);
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .a4 {
@@ -252,6 +287,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
+  margin-right: 8px;
 }
 
 .brand {
@@ -420,6 +456,7 @@ body {
 }
 
 .screen-label {
+  margin-left: 25px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1.2px;
@@ -431,12 +468,12 @@ body {
   gap: 6px;
 }
 
-.screen-label::before {
+/* .screen-label::before {
   content: "";
   width: 16px;
   height: 1px;
   background: var(--border-screen-label);
-}
+} */
 
 .dashboard-frame {
   background: var(--bg-frame);
@@ -514,7 +551,7 @@ body {
 .feature-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px;
   padding: 20px 0 0;
   margin-top: auto;
 }

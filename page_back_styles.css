@@ -84,7 +84,7 @@
   --text-feat-strong: #1a1a1a;
   --bg-why-card: #fafafa;
   --border-why-card: #ddd;
-  --bg-why-icon: rgba(0, 220, 150, 0.1);
+  --bg-why-icon: rgba(77, 209, 84, 0.911);
   --border-why-icon: transparent;
   --text-why-icon: #2563eb;
   --text-why-p: #555;
@@ -93,6 +93,7 @@
   --text-footer-left: #1a1a1a;
   --text-footer-span: #2563eb;
   --text-footer-right: #555;
+  --text-footer-right-bold: #353333;
   --bg-cta-pill: #1a1a1a;
   --text-cta-pill: #fff;
   --border-cta-pill: #000;
@@ -108,7 +109,7 @@
   --bg-hero-glow: radial-gradient(circle, rgba(0,220,150,0.08) 0%, transparent 65%);
   --text-main: #ffffff;
   --text-muted: #7A8BA8;
-  --text-light: #4A5A72;
+  --text-light: #8a9bb8;
   --text-brand: #ffffff;
   --accent-primary: #00DC96;
   --bg-live: rgba(0,220,150,0.12);
@@ -123,7 +124,7 @@
   --text-p: #7a8ba8;
   --text-stat-num: #ffffff;
   --text-stat-num-span: #00DC96;
-  --text-stat-label: #4A5A72;
+  --text-stat-label: #8a9bb8;
   --border-stat-divider: rgba(255,255,255,0.08);
   --bg-screens: transparent;
   --text-screen-label: #3A4A62;
@@ -145,7 +146,7 @@
   --dot-pill: #00DC96;
   --bg-strip: linear-gradient(90deg, rgba(0,220,150,0.12) 0%, rgba(0,184,200,0.08) 100%);
   --border-strip: rgba(0,220,150,0.18);
-  --text-strip-left: #4A6A5A;
+  --text-strip-left: #c8d5e8;
   --text-strip-strong: #00DC96;
   --bg-cta: #00DC96;
   --text-cta: #0B0D1A;
@@ -163,10 +164,10 @@
   --border-price-card: rgba(255, 255, 255, 0.08);
   --bg-price-card-feat: rgba(0, 220, 150, 0.08);
   --border-price-card-feat: rgba(0, 220, 150, 0.3);
-  --text-price-tier: #6a7b95;
+  --text-price-tier: #8a9bb8;
   --text-price-amount: #ffffff;
   --text-price-amount-feat: #00dc96;
-  --text-price-unit: #5a6b82;
+  --text-price-unit: #8a9bb8;
   --bg-feat-badge: #00dc96;
   --text-feat-badge: #0b0d1a;
   --bg-feature-block: rgba(255, 255, 255, 0.03);
@@ -175,13 +176,13 @@
   --bg-block-icon-web: rgba(60, 120, 255, 0.15);
   --bg-block-icon-mob: rgba(0, 220, 150, 0.12);
   --border-block-icon: transparent;
-  --text-feature-sub: #4a5a72;
+  --text-feature-sub: #8a9bb8;
   --text-feat-list: #8a9bb8;
   --dot-feat-list: #00dc96;
   --text-feat-strong: #c8d5e8;
   --bg-why-card: rgba(255, 255, 255, 0.03);
   --border-why-card: rgba(255, 255, 255, 0.06);
-  --bg-why-icon: rgba(0, 220, 150, 0.1);
+  --bg-why-icon: #0caa78;
   --border-why-icon: transparent;
   --text-why-icon: #00dc96;
   --text-why-p: #7a8ba8;
@@ -189,7 +190,8 @@
   --border-footer: rgba(255, 255, 255, 0.06);
   --text-footer-left: #ffffff;
   --text-footer-span: #00dc96;
-  --text-footer-right: #4a5a72;
+  --text-footer-right: #8a9bb8;
+  --text-footer-right-bold: #d1cbcb;
   --bg-cta-pill: linear-gradient(135deg, #00dc96, #00b8c8);
   --text-cta-pill: #0b0d1a;
   --border-cta-pill: transparent;
@@ -582,6 +584,10 @@ body {
   color: var(--text-footer-right);
   text-align: right;
   line-height: 1.5;
+}
+
+.footer-right strong {
+  color: var(--text-footer-right-bold);
 }
 
 .cta-pill {
