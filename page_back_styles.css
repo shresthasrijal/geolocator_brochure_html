@@ -55,6 +55,7 @@
   --text-cta: #fff;
   --border-cta: #000;
   --text-platform: #444;
+  --text-notice: #000;
 
   /* Additional back-page specific vars placed here so both files share one identical root */
   --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
@@ -112,6 +113,7 @@
 }
 
 .dark {
+  --text-notice: #fff;
   --bg-body: #0f0f14;
   --bg-a4: #0b0d1a;
   --border-a4: transparent;
@@ -344,6 +346,15 @@ body {
   font-weight: 800;
 }
 
+.notice {
+  font-size: 10px;
+  color: var(--text-notice);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
 .tagline {
   font-size: 15px;
   color: var(--text-tagline);
@@ -369,7 +380,7 @@ body {
 
 /* DIVIDER */
 .divider {
-  height: 1px;
+  height: 2px;
   background: var(--bg-divider);
   margin-bottom: 20px;
 }
@@ -479,7 +490,7 @@ body {
 
 .feature-block-title {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--text-feature-title);
   margin-bottom: 4px;
@@ -512,7 +523,7 @@ body {
 }
 
 .feature-block-sub {
-  font-size: 12.5px;
+  font-size: 14px;
   color: var(--text-feature-sub);
   margin-bottom: 14px;
   padding-left: 30px;
@@ -649,47 +660,39 @@ body {
     margin: 0;
   }
 
-  html {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
     width: 210mm;
     height: 297mm;
-    margin: 0;
-    padding: 0;
-    /* 
-      zoom shrinks everything proportionally AND
-      updates the layout viewport — no leftover space.
-      
-      Lower = smaller = more fits.
-      Start at 0.9, go down until bottom strip shows.
-      Common sweet spot: 0.85–0.92
-    */
-    zoom: 0.85;
-  }
-
-  body {
-    /* 
-      Since zoom: 0.9 on html makes viewport 1/0.9x bigger,
-      expand body to fill it: 210mm / 0.9 = 233mm
-      Formula: Xmm / zoom value
-    */
-    width: calc(210mm / 0.85);
-    height: calc(297mm / 0.85);
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     display: block;
-    background: #fff;
+    background: #0b0d1a;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
+  .divider {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: none !important;
+    height: 0 !important;
+    border: none !important;
+    border-top: 2px solid #00dc96 !important;
+    margin-bottom: 20px;
+  }
   .a4 {
-    /* Same inverse expansion — fill the zoomed-out viewport */
-    width: calc(210mm / 0.85);
-    height: calc(297mm / 0.85);
+    width: 210mm;
+    height: 297mm;
+    min-height: unset;
     overflow: hidden;
     box-shadow: none;
     border: none;
-    min-height: unset;
+    border-radius: 0;
+    padding: 52px 52px 44px;
+    transform: scale(0.94);
+    transform-origin: top left;
   }
 
   .hero,
@@ -699,7 +702,6 @@ body {
     margin-bottom: auto !important;
   }
 
-  .hero-section::after,
   .a4::before,
   .a4::after {
     display: none !important;
