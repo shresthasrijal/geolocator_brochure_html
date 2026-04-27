@@ -5,11 +5,9 @@
   --shadow-a4: 0 2px 12px rgba(0, 0, 0, 0.08);
   --bg-hero: linear-gradient(160deg, #fff 0%, #fffaf0 40%, #fff9f0 100%);
   --border-hero: #e8e8e8;
-  --bg-hero-glow: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.03) 0%,
-    transparent 65%
-  );
+  --bg-hero-glow: radial-gradient(circle,
+      rgba(0, 0, 0, 0.03) 0%,
+      transparent 65%);
   --text-main: #1a1a1a;
   --text-muted: #555;
   --text-light: #666;
@@ -60,16 +58,12 @@
   /* Additional back-page specific vars placed here so both files share one identical root */
   --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.02) 0%,
-    transparent 70%
-  );
-  --bg-a4-after: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.02) 0%,
-    transparent 70%
-  );
+  --bg-a4-before: radial-gradient(circle,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 70%);
+  --bg-a4-after: radial-gradient(circle,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 70%);
   --text-tagline: #dddfe4;
   --bg-divider: #e0e0e0;
   --text-section-label: #444;
@@ -120,11 +114,9 @@
   --shadow-a4: none;
   --bg-hero: linear-gradient(160deg, #0d1528 0%, #0b1020 40%, #0b0d1a 100%);
   --border-hero: transparent;
-  --bg-hero-glow: radial-gradient(
-    circle,
-    rgba(0, 220, 150, 0.08) 0%,
-    transparent 65%
-  );
+  --bg-hero-glow: radial-gradient(circle,
+      rgba(0, 220, 150, 0.08) 0%,
+      transparent 65%);
   --text-main: #ffffff;
   --text-muted: #7a8ba8;
   --text-light: #8a9bb8;
@@ -164,11 +156,9 @@
   --border-pill: rgba(255, 255, 255, 0.08);
   --text-pill: #7a8ba8;
   --dot-pill: #00dc96;
-  --bg-strip: linear-gradient(
-    90deg,
-    rgba(0, 220, 150, 0.12) 0%,
-    rgba(0, 184, 200, 0.08) 100%
-  );
+  --bg-strip: linear-gradient(90deg,
+      rgba(0, 220, 150, 0.12) 0%,
+      rgba(0, 184, 200, 0.08) 100%);
   --border-strip: rgba(0, 220, 150, 0.18);
   --text-strip-left: #c8d5e8;
   --text-strip-strong: #00dc96;
@@ -178,23 +168,17 @@
   --text-platform: #3a4a62;
   --bg-pin: linear-gradient(135deg, #00dc96, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(
-    circle,
-    rgba(0, 220, 150, 0.1) 0%,
-    transparent 70%
-  );
-  --bg-a4-after: radial-gradient(
-    circle,
-    rgba(60, 120, 255, 0.1) 0%,
-    transparent 70%
-  );
+  --bg-a4-before: radial-gradient(circle,
+      rgba(0, 220, 150, 0.1) 0%,
+      transparent 70%);
+  --bg-a4-after: radial-gradient(circle,
+      rgba(60, 120, 255, 0.1) 0%,
+      transparent 70%);
   --text-tagline: #cfd2d8;
-  --bg-divider: linear-gradient(
-    90deg,
-    #00dc96 0%,
-    rgba(0, 220, 150, 0.1) 60%,
-    transparent 100%
-  );
+  --bg-divider: linear-gradient(90deg,
+      #00dc96 0%,
+      rgba(0, 220, 150, 0.1) 60%,
+      transparent 100%);
   --text-section-label: #00dc96;
   --border-section-label: transparent;
   --bg-price-card: rgba(255, 255, 255, 0.04);
@@ -346,15 +330,6 @@ body {
   font-weight: 800;
 }
 
-.notice {
-  font-size: 10px;
-  color: var(--text-notice);
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
 .tagline {
   font-size: 15px;
   color: var(--text-tagline);
@@ -406,7 +381,56 @@ body {
   max-width: 90%;
 }
 
+/* STATS ROW */
+.stats-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 100px;
+}
+
+.stat-num {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-stat-num);
+}
+
+.stat-num span {
+  color: var(--text-stat-num-span);
+  font-weight: 800;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-stat-label);
+}
+
+.stat-divider {
+  width: 1px;
+  background: var(--border-stat-divider);
+  align-self: stretch;
+  margin: 0 8px;
+}
+
+
 /* PRICING */
+.notice {
+  font-size: 10px;
+  color: var(--text-notice);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
 .section-label {
   font-family: "Space Grotesk", sans-serif;
   font-size: clamp(12px, 0.9vh, 16px);
@@ -471,6 +495,37 @@ body {
 .price-unit {
   font-size: 11px;
   color: var(--text-price-unit);
+}
+
+/* feature pill */
+.feature-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 0 0;
+  margin-bottom: 15px;
+  /* margin-top: auto; */
+}
+
+.pill {
+  background: var(--bg-pill);
+  border: 1px solid var(--border-pill);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 11px;
+  color: var(--text-pill);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pill-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--dot-pill);
+  flex-shrink: 0;
 }
 
 /* FEATURES GRID */
@@ -560,52 +615,6 @@ body {
   font-weight: 500;
 }
 
-/* WHY CHOOSE */
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 32px;
-}
-
-.why-card {
-  background: var(--bg-why-card);
-  border: 1px solid var(--border-why-card);
-  border-radius: 10px;
-  padding: 14px 12px;
-  text-align: center;
-}
-
-.why-icon {
-  width: 32px;
-  height: 32px;
-  background: var(--bg-why-icon);
-  border: 1px solid var(--border-why-icon);
-  border-radius: 8px;
-  margin: 0 auto 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  color: var(--text-why-icon);
-}
-
-.why-card p {
-  font-size: 12px;
-  color: var(--text-why-p);
-  line-height: 1.4;
-  font-weight: 400;
-}
-
-.why-card strong {
-  display: block;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 13px;
-  color: var(--text-why-strong);
-  font-weight: 600;
-  margin-bottom: 3px;
-}
-
 /* FOOTER */
 .footer {
   margin-top: auto;
@@ -682,6 +691,7 @@ body {
     border-top: 2px solid #00dc96 !important;
     margin-bottom: 20px;
   }
+
   .a4 {
     width: 210mm;
     height: 297mm;
