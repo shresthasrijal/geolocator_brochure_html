@@ -5,11 +5,9 @@
   --shadow-a4: 0 2px 12px rgba(0, 0, 0, 0.08);
   --bg-hero: linear-gradient(160deg, #fff 0%, #fffaf0 40%, #fff9f0 100%);
   --border-hero: #e8e8e8;
-  --bg-hero-glow: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.03) 0%,
-    transparent 65%
-  );
+  --bg-hero-glow: radial-gradient(circle,
+      rgba(0, 0, 0, 0.03) 0%,
+      transparent 65%);
   --text-main: #1a1a1a;
   --text-muted: #555;
   --text-light: #666;
@@ -57,16 +55,12 @@
   --text-platform: #444;
   --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.02) 0%,
-    transparent 70%
-  );
-  --bg-a4-after: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.02) 0%,
-    transparent 70%
-  );
+  --bg-a4-before: radial-gradient(circle,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 70%);
+  --bg-a4-after: radial-gradient(circle,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 70%);
   --text-tagline: #555;
   --bg-divider: #e0e0e0;
   --text-section-label: #444;
@@ -115,11 +109,9 @@
   --shadow-a4: none;
   --bg-hero: linear-gradient(160deg, #0d1528 0%, #0b1020 40%, #0b0d1a 100%);
   --border-hero: transparent;
-  --bg-hero-glow: radial-gradient(
-    circle,
-    rgba(0, 220, 150, 0.08) 0%,
-    transparent 65%
-  );
+  --bg-hero-glow: radial-gradient(circle,
+      rgba(0, 220, 150, 0.08) 0%,
+      transparent 65%);
   --text-main: #ffffff;
   --text-muted: #7a8ba8;
   --text-light: #8a9bb8;
@@ -159,11 +151,9 @@
   --border-pill: rgba(255, 255, 255, 0.08);
   --text-pill: #aebdda;
   --dot-pill: #00dc96;
-  --bg-strip: linear-gradient(
-    90deg,
-    rgba(0, 220, 150, 0.12) 0%,
-    rgba(0, 184, 200, 0.08) 100%
-  );
+  --bg-strip: linear-gradient(90deg,
+      rgba(0, 220, 150, 0.12) 0%,
+      rgba(0, 184, 200, 0.08) 100%);
   --border-strip: rgba(0, 220, 150, 0.18);
   --text-strip-left: #c8d5e8;
   --text-strip-strong: #00dc96;
@@ -173,23 +163,17 @@
   --text-platform: #a7aeb9;
   --bg-pin: linear-gradient(135deg, #00dc96, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(
-    circle,
-    rgba(0, 220, 150, 0.1) 0%,
-    transparent 70%
-  );
-  --bg-a4-after: radial-gradient(
-    circle,
-    rgba(60, 120, 255, 0.1) 0%,
-    transparent 70%
-  );
+  --bg-a4-before: radial-gradient(circle,
+      rgba(0, 220, 150, 0.1) 0%,
+      transparent 70%);
+  --bg-a4-after: radial-gradient(circle,
+      rgba(60, 120, 255, 0.1) 0%,
+      transparent 70%);
   --text-tagline: #8a9bb8;
-  --bg-divider: linear-gradient(
-    90deg,
-    #00dc96 0%,
-    rgba(0, 220, 150, 0.1) 60%,
-    transparent 100%
-  );
+  --bg-divider: linear-gradient(90deg,
+      #00dc96 0%,
+      rgba(0, 220, 150, 0.1) 60%,
+      transparent 100%);
   --text-section-label: #00dc96;
   --border-section-label: transparent;
   --bg-price-card: rgba(255, 255, 255, 0.04);
@@ -263,7 +247,7 @@ body {
 /* TOP HERO SECTION */
 .hero-section {
   background: var(--bg-hero);
-  padding: 44px 52px 36px;
+  padding: 28px 52px 24px;
   position: relative;
   flex-shrink: 0;
   border-bottom: 1px solid var(--border-hero);
@@ -335,6 +319,7 @@ body {
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 1;
@@ -347,7 +332,7 @@ body {
 
 /* HEADLINE */
 .headline {
-  margin-bottom: 32px;
+  margin-bottom: 18px;
 }
 
 .headline-eyebrow {
@@ -443,7 +428,7 @@ body {
 .screens-layout {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: stretch;
   padding: 28px 0 0;
   flex: 1;
 }
@@ -551,7 +536,8 @@ body {
 .feature-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  justify-content: space-between;
+  gap: 12px;
   padding: 20px 0 0;
   margin-top: auto;
 }
@@ -625,38 +611,64 @@ body {
   color: var(--text-platform);
 }
 
-/* PRINT OPTIMIZATIONS */
+/* to print to a4 */
 @media print {
   @page {
     size: A4;
     margin: 0;
   }
-  body {
-    background: #fff;
+
+  html {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
     padding: 0;
+    /* 
+      zoom shrinks everything proportionally AND
+      updates the layout viewport — no leftover space.
+      
+      Lower = smaller = more fits.
+      Start at 0.9, go down until bottom strip shows.
+      Common sweet spot: 0.85–0.92
+    */
+    zoom: 0.85;
+  }
+
+  body {
+    /* 
+      Since zoom: 0.9 on html makes viewport 1/0.9x bigger,
+      expand body to fill it: 210mm / 0.9 = 233mm
+      Formula: Xmm / zoom value
+    */
+    width: calc(210mm / 0.85);
+    height: calc(297mm / 0.85);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    background: #fff;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
   .a4 {
+    /* Same inverse expansion — fill the zoomed-out viewport */
+    width: calc(210mm / 0.85);
+    height: calc(297mm / 0.85);
+    overflow: hidden;
     box-shadow: none;
     border: none;
-    width: 210mm;
-    height: 297mm;
-    margin: 0;
-    overflow: hidden;
+    min-height: unset;
   }
 
   .hero-section::after,
   .a4::before,
   .a4::after {
-    display: none;
+    display: none !important;
   }
 
-  .pill,
-  .price-card,
-  .feature-block,
-  .why-card {
-    break-inside: avoid;
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }

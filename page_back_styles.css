@@ -5,7 +5,9 @@
   --shadow-a4: 0 2px 12px rgba(0, 0, 0, 0.08);
   --bg-hero: linear-gradient(160deg, #fff 0%, #fffaf0 40%, #fff9f0 100%);
   --border-hero: #e8e8e8;
-  --bg-hero-glow: radial-gradient(circle, rgba(0, 0, 0, 0.03) 0%, transparent 65%);
+  --bg-hero-glow: radial-gradient(circle,
+      rgba(0, 0, 0, 0.03) 0%,
+      transparent 65%);
   --text-main: #1a1a1a;
   --text-muted: #555;
   --text-light: #666;
@@ -51,12 +53,16 @@
   --text-cta: #fff;
   --border-cta: #000;
   --text-platform: #444;
-  
+
   /* Additional back-page specific vars placed here so both files share one identical root */
   --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
-  --bg-a4-after: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+  --bg-a4-before: radial-gradient(circle,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 70%);
+  --bg-a4-after: radial-gradient(circle,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 70%);
   --text-tagline: #555;
   --bg-divider: #e0e0e0;
   --text-section-label: #444;
@@ -101,63 +107,76 @@
 
 .dark {
   --bg-body: #0f0f14;
-  --bg-a4: #0B0D1A;
+  --bg-a4: #0b0d1a;
   --border-a4: transparent;
   --shadow-a4: none;
-  --bg-hero: linear-gradient(160deg, #0D1528 0%, #0B1020 40%, #0B0D1A 100%);
+  --bg-hero: linear-gradient(160deg, #0d1528 0%, #0b1020 40%, #0b0d1a 100%);
   --border-hero: transparent;
-  --bg-hero-glow: radial-gradient(circle, rgba(0,220,150,0.08) 0%, transparent 65%);
+  --bg-hero-glow: radial-gradient(circle,
+      rgba(0, 220, 150, 0.08) 0%,
+      transparent 65%);
   --text-main: #ffffff;
-  --text-muted: #7A8BA8;
+  --text-muted: #7a8ba8;
   --text-light: #8a9bb8;
   --text-brand: #ffffff;
-  --accent-primary: #00DC96;
-  --bg-live: rgba(0,220,150,0.12);
-  --border-live: rgba(0,220,150,0.25);
-  --text-live: #00DC96;
-  --dot-live: #00DC96;
-  --text-eyebrow: #00DC96;
+  --accent-primary: #00dc96;
+  --bg-live: rgba(0, 220, 150, 0.12);
+  --border-live: rgba(0, 220, 150, 0.25);
+  --text-live: #00dc96;
+  --dot-live: #00dc96;
+  --text-eyebrow: #00dc96;
   --border-eyebrow: transparent;
   --text-h1: #ffffff;
-  --text-h1-em: #00DC96;
+  --text-h1-em: #00dc96;
   --text-h2: #ffffff;
   --text-p: #7a8ba8;
   --text-stat-num: #ffffff;
-  --text-stat-num-span: #00DC96;
+  --text-stat-num-span: #00dc96;
   --text-stat-label: #8a9bb8;
-  --border-stat-divider: rgba(255,255,255,0.08);
+  --border-stat-divider: rgba(255, 255, 255, 0.08);
   --bg-screens: transparent;
-  --text-screen-label: #3A4A62;
-  --border-screen-label: #3A4A62;
+  --text-screen-label: #3a4a62;
+  --border-screen-label: #3a4a62;
   --bg-frame: #111827;
-  --border-frame: rgba(255,255,255,0.10);
-  --shadow-frame: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.05);
-  --bg-frame-label: rgba(11,13,26,0.85);
-  --border-frame-label: rgba(255,255,255,0.10);
-  --text-frame-label: #7A8BA8;
+  --border-frame: rgba(255, 255, 255, 0.1);
+  --shadow-frame:
+    0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --bg-frame-label: rgba(11, 13, 26, 0.85);
+  --border-frame-label: rgba(255, 255, 255, 0.1);
+  --text-frame-label: #7a8ba8;
   --bg-phone: #1a1f2e;
-  --border-phone: rgba(255,255,255,0.12);
-  --shadow-phone: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 3px rgba(255,255,255,0.04);
+  --border-phone: rgba(255, 255, 255, 0.12);
+  --shadow-phone:
+    0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.04);
   --bg-notch: #1a1f2e;
   --border-notch: transparent;
-  --bg-pill: rgba(255,255,255,0.04);
-  --border-pill: rgba(255,255,255,0.08);
-  --text-pill: #7A8BA8;
-  --dot-pill: #00DC96;
-  --bg-strip: linear-gradient(90deg, rgba(0,220,150,0.12) 0%, rgba(0,184,200,0.08) 100%);
-  --border-strip: rgba(0,220,150,0.18);
+  --bg-pill: rgba(255, 255, 255, 0.04);
+  --border-pill: rgba(255, 255, 255, 0.08);
+  --text-pill: #7a8ba8;
+  --dot-pill: #00dc96;
+  --bg-strip: linear-gradient(90deg,
+      rgba(0, 220, 150, 0.12) 0%,
+      rgba(0, 184, 200, 0.08) 100%);
+  --border-strip: rgba(0, 220, 150, 0.18);
   --text-strip-left: #c8d5e8;
-  --text-strip-strong: #00DC96;
-  --bg-cta: #00DC96;
-  --text-cta: #0B0D1A;
+  --text-strip-strong: #00dc96;
+  --bg-cta: #00dc96;
+  --text-cta: #0b0d1a;
   --border-cta: transparent;
-  --text-platform: #3A4A62;
+  --text-platform: #3a4a62;
   --bg-pin: linear-gradient(135deg, #00dc96, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(circle, rgba(0, 220, 150, 0.1) 0%, transparent 70%);
-  --bg-a4-after: radial-gradient(circle, rgba(60, 120, 255, 0.1) 0%, transparent 70%);
+  --bg-a4-before: radial-gradient(circle,
+      rgba(0, 220, 150, 0.1) 0%,
+      transparent 70%);
+  --bg-a4-after: radial-gradient(circle,
+      rgba(60, 120, 255, 0.1) 0%,
+      transparent 70%);
   --text-tagline: #8a9bb8;
-  --bg-divider: linear-gradient(90deg, #00dc96 0%, rgba(0, 220, 150, 0.1) 60%, transparent 100%);
+  --bg-divider: linear-gradient(90deg,
+      #00dc96 0%,
+      rgba(0, 220, 150, 0.1) 60%,
+      transparent 100%);
   --text-section-label: #00dc96;
   --border-section-label: transparent;
   --bg-price-card: rgba(255, 255, 255, 0.04);
@@ -212,7 +231,9 @@ body {
   padding: 40px 20px;
   font-family: "DM Sans", sans-serif;
   color: var(--text-main);
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .a4 {
@@ -339,7 +360,7 @@ body {
 
 /* HERO TEXT */
 .hero {
-  margin-bottom: 32px;
+  margin-bottom: auto;
 }
 
 .hero h2 {
@@ -361,7 +382,7 @@ body {
 /* PRICING */
 .section-label {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 10px;
+  font-size: clamp(10px, 0.9vh, 16px);
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -381,7 +402,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
-  margin-bottom: 32px;
+  margin-bottom: auto;
 }
 
 .price-card {
@@ -430,7 +451,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin-bottom: 28px;
+  margin-bottom: auto;
 }
 
 .feature-block {
@@ -517,7 +538,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  margin-bottom: 32px;
+  margin-bottom: auto;
 }
 
 .why-card {
@@ -604,37 +625,64 @@ body {
   border: 1px solid var(--border-cta-pill);
 }
 
+/* to print to a4 */
 @media print {
   @page {
     size: A4;
     margin: 0;
   }
-  body {
-    background: white;
+
+  html {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
     padding: 0;
+    /* 
+      zoom shrinks everything proportionally AND
+      updates the layout viewport — no leftover space.
+      
+      Lower = smaller = more fits.
+      Start at 0.9, go down until bottom strip shows.
+      Common sweet spot: 0.85–0.92
+    */
+    zoom: 0.85;
+  }
+
+  body {
+    /* 
+      Since zoom: 0.9 on html makes viewport 1/0.9x bigger,
+      expand body to fill it: 210mm / 0.9 = 233mm
+      Formula: Xmm / zoom value
+    */
+    width: calc(210mm / 0.85);
+    height: calc(297mm / 0.85);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    background: #fff;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
   .a4 {
+    /* Same inverse expansion — fill the zoomed-out viewport */
+    width: calc(210mm / 0.85);
+    height: calc(297mm / 0.85);
+    overflow: hidden;
     box-shadow: none;
     border: none;
-    width: 210mm;
-    height: 297mm;
-    margin: 0;
-    overflow: hidden;
+    min-height: unset;
   }
 
+  .hero-section::after,
   .a4::before,
   .a4::after {
-    display: none;
+    display: none !important;
   }
 
-  .price-card,
-  .feature-block,
-  .why-card {
-    break-inside: avoid;
+  img {
+    max-width: 100%;
+    height: auto;
   }
-
-
 }

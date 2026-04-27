@@ -1,255 +1,210 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Geolocator App Front Page</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="page_front_styles.css" />
-  </head>
 
-  <!-- <body class="dark"> -->
-  <body>
-    <div class="a4">
-      <!-- HERO SECTION -->
-      <div class="hero-section">
-        <div class="nav-bar">
-          <div class="brand">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <circle cx="14" cy="12" r="8" fill="#7ED957" opacity="0.25" />
-              <circle
-                cx="14"
-                cy="12"
-                r="3.5"
-                fill="#FFFFFF"
-                stroke="#7ED957"
-                stroke-width="1.5"
-              />
-              <path
-                d="M14 20 Q9 25 14 28 Q19 25 14 20Z"
-                fill="#7ED957"
-                opacity="0.25"
-              />
-            </svg>
-            <div class="brand-name">GEO<span>Locator</span></div>
-          </div>
-          <div class="live-dot">Live Tracking</div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Geolocator App Front Page</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="page_front_styles.css" />
+</head>
+
+<body class="dark">
+  <!-- <body> -->
+  <div class="a4">
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+      <div class="nav-bar">
+        <div class="brand">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="12" r="8" fill="#7ED957" opacity="0.25" />
+            <circle cx="14" cy="12" r="3.5" fill="#FFFFFF" stroke="#7ED957" stroke-width="1.5" />
+            <path d="M14 20 Q9 25 14 28 Q19 25 14 20Z" fill="#7ED957" opacity="0.25" />
+          </svg>
+          <div class="brand-name">GEO<span>Locator</span></div>
         </div>
+        <div class="live-dot">Live Tracking</div>
+      </div>
 
-        <div class="headline">
-          <div class="headline-eyebrow">Fleet Management Platform</div>
-          <h1>Track Every Driver.<br /><em>In Real Time.</em></h1>
-          <p>A complete solution for managing your mobile workforce.</p>
-          <p>
-            Live map dashboard for managers, a simple one-tap app for drivers.
-          </p>
-          <p>Location Tracking works even without internet!</p>
+      <div class="headline">
+        <div class="headline-eyebrow">Fleet Management Platform</div>
+        <h1>Track Every Driver.<br /><em>In Real Time.</em></h1>
+        <p>A complete solution for managing your mobile workforce.</p>
+        <p>
+          Live map dashboard for managers, a simple one-tap app for drivers.
+        </p>
+        <p>Location Tracking works even without internet!</p>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num"><span>~ 10m</span></div>
+          <div class="stat-label">Location ping interval</div>
         </div>
-
-        <div class="stats-row">
-          <div class="stat">
-            <div class="stat-num"><span>~ 10m</span></div>
-            <div class="stat-label">Location ping interval</div>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <div class="stat-num">From <span>Rs 149</span></div>
-            <div class="stat-label">Per driver / month</div>
-          </div>
-          <div class="stat-divider"></div>
-          <!-- <div class="stat">
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">From <span>Rs 149</span></div>
+          <div class="stat-label">Per driver / month</div>
+        </div>
+        <div class="stat-divider"></div>
+        <!-- <div class="stat">
                     <div class="stat-num"><span>100%</span></div>
                     <div class="stat-label">Offline capable</div>
                 </div> -->
-          <!-- <div class="stat-divider"></div> -->
-          <div class="stat">
-            <div class="stat-num"><span>2</span> Apps</div>
-            <div class="stat-label">Web + Mobile</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SCREENSHOTS -->
-      <div class="screens-section">
-        <div class="screens-layout">
-          <div class="dashboard-col">
-            <div class="screen-label">Web Dashboard</div>
-            <div class="dashboard-frame">
-              <img src="images/dashboard.png" alt="GEO Locator Dashboard" />
-              <div class="frame-label">
-                Live Map · Route History · Driver Insights
-              </div>
-            </div>
-
-            <div style="margin-top: 12px">
-              <div class="screen-label">Route Details View</div>
-              <div class="dashboard-frame" style="border-radius: 8px">
-                <img src="images/routes.webp" alt="Route Details" />
-                <div class="frame-label">
-                  Session replay · Start–End · Duration
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mobile-col">
-            <div class="screen-label">Driver App</div>
-            <div class="phone-frame">
-              <img src="images/mobile.webp" alt="Driver App" />
-            </div>
-
-            <div
-              style="
-                margin-top: 24px;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-              "
-            >
-              <div
-                style="
-                  background: #f8f8f8;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  padding: 8px 10px;
-                "
-              >
-                <div
-                  style="
-                    font-size: 12px;
-                    font-weight: 600;
-                    color: #333;
-                    font-family: &quot;Space Grotesk&quot;, sans-serif;
-                    margin-bottom: 2px;
-                  "
-                >
-                  One Tap
-                </div>
-                <div style="font-size: 11px; color: #555; line-height: 1.4">
-                  Start and Stop trips instantly with one tap !
-                </div>
-              </div>
-              <div
-                style="
-                  background: #f8f8f8;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  padding: 8px 10px;
-                "
-              >
-                <div
-                  style="
-                    font-size: 12px;
-                    font-weight: 600;
-                    color: #333;
-                    font-family: &quot;Space Grotesk&quot;, sans-serif;
-                    margin-bottom: 2px;
-                  "
-                >
-                  Offline Mode
-                </div>
-                <div style="font-size: 11px; color: #555; line-height: 1.4">
-                  Record trips without data or internet !
-                </div>
-              </div>
-              <div
-                style="
-                  background: #f8f8f8;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  padding: 8px 10px;
-                "
-              >
-                <div
-                  style="
-                    font-size: 12px;
-                    font-weight: 600;
-                    color: #333;
-                    font-family: &quot;Space Grotesk&quot;, sans-serif;
-                    margin-bottom: 2px;
-                  "
-                >
-                  Team View
-                </div>
-                <div style="font-size: 11px; color: #555; line-height: 1.4">
-                  See info on all organization drivers
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="feature-pills">
-          <div class="pill">
-            <div class="pill-dot"></div>
-            Live location
-          </div>
-          <div class="pill">
-            <div class="pill-dot"></div>
-            Session history &amp; reports
-          </div>
-
-          <div class="pill">
-            <div class="pill-dot"></div>
-            Secure login
-          </div>
-          <div class="pill">
-            <div class="pill-dot"></div>
-            Favorite places
-          </div>
-          <div class="pill">
-            <div class="pill-dot"></div>
-            Auto data upload
-          </div>
-        </div>
-      </div>
-
-      <!-- BOTTOM STRIP -->
-      <div class="bottom-strip">
-        <div class="strip-left">
-          Flip for pricing &amp; full feature breakdown
-        </div>
-        <div class="strip-cta">Get Started Today</div>
-        <div class="strip-platforms">
-          <div class="platform-badge">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <rect
-                x="1"
-                y="1"
-                width="10"
-                height="7"
-                rx="1"
-                stroke="#a7aeb9"
-                stroke-width="1"
-              />
-              <path
-                d="M4 10h4M6 8v2"
-                stroke="#a7aeb9"
-                stroke-width="1"
-                stroke-linecap="round"
-              />
-            </svg>
-            Web
-          </div>
-          <div class="platform-badge">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <rect
-                x="3"
-                y="1"
-                width="6"
-                height="10"
-                rx="1.5"
-                stroke="#a7aeb9"
-                stroke-width="1"
-              />
-              <circle cx="6" cy="9" r="0.7" fill="#a7aeb9" />
-            </svg>
-            iOS &amp; Android
-          </div>
+        <!-- <div class="stat-divider"></div> -->
+        <div class="stat">
+          <div class="stat-num"><span>2</span> Apps</div>
+          <div class="stat-label">Web + Mobile</div>
         </div>
       </div>
     </div>
-  </body>
+
+    <!-- SCREENSHOTS -->
+    <div class="screens-section">
+      <div class="screens-layout">
+        <div class="dashboard-col">
+          <div class="screen-label">Web Dashboard</div>
+          <div class="dashboard-frame">
+            <img src="images/dashboard.png" alt="GEO Locator Dashboard" />
+            <div class="frame-label">
+              Live Map · Route History · Driver Insights
+            </div>
+          </div>
+
+          <div style="margin-top: 12px">
+            <div class="screen-label">Route Details View</div>
+            <div class="dashboard-frame" style="border-radius: 8px">
+              <img src="images/routes.webp" alt="Route Details" />
+              <div class="frame-label">
+                Session replay · Start–End · Duration
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-col">
+          <div class="screen-label">Driver App</div>
+          <div class="phone-frame">
+            <img src="images/mobile.webp" alt="Driver App" />
+          </div>
+
+          <div style="
+                margin-top: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+              ">
+            <div style="
+                  background: #f8f8f8;
+                  border: 1px solid #e0e0e0;
+                  border-radius: 8px;
+                  padding: 8px 10px;
+                ">
+              <div style="
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #333;
+                    font-family: &quot;Space Grotesk&quot;, sans-serif;
+                    margin-bottom: 2px;
+                  ">
+                One Tap
+              </div>
+              <div style="font-size: 11px; color: #555; line-height: 1.4">
+                Start and Stop trips instantly with one tap !
+              </div>
+            </div>
+            <div style="
+                  background: #f8f8f8;
+                  border: 1px solid #e0e0e0;
+                  border-radius: 8px;
+                  padding: 8px 10px;
+                ">
+              <div style="
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #333;
+                    font-family: &quot;Space Grotesk&quot;, sans-serif;
+                    margin-bottom: 2px;
+                  ">
+                Offline Mode
+              </div>
+              <div style="font-size: 11px; color: #555; line-height: 1.4">
+                Record trips without data or internet !
+              </div>
+            </div>
+            <div style="
+                  background: #f8f8f8;
+                  border: 1px solid #e0e0e0;
+                  border-radius: 8px;
+                  padding: 8px 10px;
+                ">
+              <div style="
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #333;
+                    font-family: &quot;Space Grotesk&quot;, sans-serif;
+                    margin-bottom: 2px;
+                  ">
+                Team View
+              </div>
+              <div style="font-size: 11px; color: #555; line-height: 1.4">
+                See info on all organization drivers
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-pills">
+        <div class="pill">
+          <div class="pill-dot"></div>
+          Live location
+        </div>
+        <div class="pill">
+          <div class="pill-dot"></div>
+          Session history &amp; reports
+        </div>
+
+        <div class="pill">
+          <div class="pill-dot"></div>
+          Secure login
+        </div>
+        <div class="pill">
+          <div class="pill-dot"></div>
+          Favorite places
+        </div>
+        <div class="pill">
+          <div class="pill-dot"></div>
+          Auto data upload
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM STRIP -->
+    <div class="bottom-strip">
+      <div class="strip-left">
+        Flip for pricing &amp; full feature breakdown
+      </div>
+      <div class="strip-cta">Get Started Today</div>
+      <div class="strip-platforms">
+        <div class="platform-badge">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <rect x="1" y="1" width="10" height="7" rx="1" stroke="#a7aeb9" stroke-width="1" />
+            <path d="M4 10h4M6 8v2" stroke="#a7aeb9" stroke-width="1" stroke-linecap="round" />
+          </svg>
+          Web
+        </div>
+        <div class="platform-badge">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <rect x="3" y="1" width="6" height="10" rx="1.5" stroke="#a7aeb9" stroke-width="1" />
+            <circle cx="6" cy="9" r="0.7" fill="#a7aeb9" />
+          </svg>
+          iOS &amp; Android
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
