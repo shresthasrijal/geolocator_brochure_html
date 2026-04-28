@@ -1,208 +1,200 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Geolocator App Front Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="page_front_styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Geolocator App Front Page</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="page_front_styles.css" />
-</head>
+  <!-- <body> -->
 
-<!-- <body> -->
-
-<body class="dark">
-  <div class="a4">
-    <!-- HERO SECTION -->
-    <div class="hero-section">
-      <div class="nav-bar">
-        <div class="brand">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-            <path d="M12 22s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12z" fill="#00dc96" />
-            <circle cx="12" cy="10" r="3" fill="#0b0d1a" />
-          </svg>
-          <div class="brand-name">GEO<span>Locator</span></div>
+  <body class="dark">
+    <div class="a4">
+      <!-- HERO SECTION -->
+      <div class="hero-section">
+        <div class="nav-bar">
+          <div class="brand">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 22s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12z"
+                fill="#00dc96"
+              />
+              <circle cx="12" cy="10" r="3" fill="#0b0d1a" />
+            </svg>
+            <div class="brand-name">GEO<span>Locator</span></div>
+          </div>
+          <div class="live-dot">Live & Offline Tracking</div>
         </div>
-        <div class="live-dot">Live & Offline Tracking</div>
-      </div>
 
-      <div class="headline">
-        <div class="headline-eyebrow">Fleet Management Platform</div>
-        <h1>Track Every Driver.<br /><em>In Real Time.</em></h1>
-        <p>A complete solution for managing your mobile workforce.</p>
-        <p>
-          Live map dashboard for managers, a simple one-tap app for drivers.
+        <div class="headline">
+          <div class="headline-eyebrow">Fleet Management Platform</div>
+          <h1>Track Every Driver.<br /><em>In Real Time.</em></h1>
+          <p>A complete solution for managing your mobile workforce.</p>
+          <p>
+            Live map dashboard for managers, a simple one-tap app for drivers.
+          </p>
+          <p>Continuous tracking with offline data logging.</p>
+        </div>
+
+        <!-- PRICING  -->
+        <div class="section-label">Simple, Scalable Pricing</div>
+        <p class="notice">
+          <strong>*</strong> These prices are exclusive of VAT. Mobile Data
+          packages are not included in this plan and will not be covered.
         </p>
-        <p>Location Tracking works even without internet!</p>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <div class="price-tier">Starter · 1-10 Drivers</div>
+            <div class="price-amount">Rs 149</div>
+            <div class="price-unit">per driver / month</div>
+          </div>
+          <div class="price-card">
+            <div class="price-tier">Growth · 11-20 Drivers</div>
+            <div class="price-amount">Rs 125</div>
+            <div class="price-unit">per driver / month</div>
+          </div>
+          <div class="price-card featured">
+            <div class="feat-badge">Best Value!</div>
+            <div class="price-tier">Scaled · 20+ Drivers</div>
+            <div class="price-amount">Rs 99</div>
+            <div class="price-unit">per driver / month</div>
+          </div>
+        </div>
+
+        <!-- WHY CHOOSE tHIS -->
+        <div class="section-label">Why Choose Geolocator?</div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M2 8l4 4 8-8"
+                  stroke="#fff"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <strong>Affordable &amp; Scalable</strong>
+            <p>Pay less as your team grows</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M8 2a6 6 0 100 12A6 6 0 008 2z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M8 5v3.5l2.5 1.5"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <strong>Reliable Offline Mode</strong>
+            <p>Logs every move offline; syncs automatically on reconnect.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle
+                  cx="8"
+                  cy="8"
+                  r="2.5"
+                  stroke="#333"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M8 1v2M8 13v2M1 8h2M13 8h2"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <strong>Real-Time Visibility</strong>
+            <p>Know where every driver is with real time updates</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M5 8h6M5 5h6M5 11h4"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="12"
+                  height="12"
+                  rx="2"
+                  stroke="#fff"
+                  stroke-width="1.2"
+                />
+              </svg>
+            </div>
+            <strong>Easy to Use</strong>
+            <p>Simple app for drivers & clean web app for managers</p>
+          </div>
+        </div>
       </div>
 
-
-      <!-- PRICING  -->
-      <div class="section-label">Simple, Scalable Pricing</div>
-      <p class="notice">
-        <strong>*</strong> These prices are exclusive of VAT. Mobile Data packages are not
-        included in this plan and will not be covered.
-      </p>
-      <div class="pricing-grid">
-        <div class="price-card">
-          <div class="price-tier">Starter · 1-10 Drivers</div>
-          <div class="price-amount">Rs 149</div>
-          <div class="price-unit">per driver / month</div>
-        </div>
-        <div class="price-card">
-          <div class="price-tier">Growth · 11-20 Drivers</div>
-          <div class="price-amount">Rs 125</div>
-          <div class="price-unit">per driver / month</div>
-        </div>
-        <div class="price-card">
-          <div class="price-tier">Scaled · 20+ Drivers</div>
-          <div class="price-amount">Rs 99</div>
-          <div class="price-unit">per driver / month</div>
-        </div>
-      </div>
-
-      <!-- WHY CHOOSE tHIS -->
-      <div class="section-label">Why Choose Geolocator?</div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M2 8l4 4 8-8" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <strong>Affordable &amp; Scalable</strong>
-          <p>Pay less as your team grows</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M8 2a6 6 0 100 12A6 6 0 008 2z" stroke="#fff" stroke-width="1.5" />
-              <path d="M8 5v3.5l2.5 1.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-            </svg>
-          </div>
-          <strong>Reliable Offline Mode</strong>
-          <p>Never miss a data point</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <circle cx="8" cy="8" r="2.5" stroke="#333" stroke-width="1.5" />
-              <path d="M8 1v2M8 13v2M1 8h2M13 8h2" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-            </svg>
-          </div>
-          <strong>Real-Time Visibility</strong>
-          <p>Know where every driver is</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M5 8h6M5 5h6M5 11h4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
-              <rect x="2" y="2" width="12" height="12" rx="2" stroke="#fff" stroke-width="1.2" />
-            </svg>
-          </div>
-          <strong>Easy to Use</strong>
-          <p>For managers &amp; drivers alike</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SCREENSHOTS -->
-    <div class="screens-section">
-      <div class="screens-layout">
-        <div class="dashboard-col">
-          <!-- <div class="screen-label">Web Dashboard</div> 
-           <div class="dashboard-frame">
-            <img src="images/user_dashboard.png" alt="GEO Locator Dashboard" />
-            <div class="frame-label">
-              Live Map · Route History · Driver Insights
+      <!-- SCREENSHOTS -->
+      <div class="screens-section">
+        <div class="screens-layout">
+          <div class="mobile-col">
+            <div class="screen-label">Driver App</div>
+            <div class="phone-frame">
+              <img
+                src="images/mobile.webp"
+                alt="Driver App Tracking Screen Nothing Started"
+              />
             </div>
-          </div> -->
+          </div>
+          <div class="features-col">
+            <div class="feature-detail-card">
+              <div class="feat-title">Secure Data</div>
+              <div class="feat-desc">
+                Real-time visibility when online. Automatic data recovery when
+                offline.
+              </div>
+            </div>
 
-          <div style="margin-top: 12px">
-            <div class="screen-label">Route Details View</div>
-            <div class="dashboard-frame" style="border-radius: 8px">
-              <img src="images/routes.webp" alt="Route Details" />
-              <div class="frame-label">
-                Session replay · Start–End · Duration
+            <div class="feature-detail-card">
+              <div class="feat-title">One Tap</div>
+              <div class="feat-desc">
+                Start and Stop trips instantly with one tap!
+              </div>
+            </div>
+
+            <div class="feature-detail-card">
+              <div class="feat-title">Team View</div>
+              <div class="feat-desc">
+                See info on all organization drivers in a unified map view.
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="mobile-col">
-          <div class="screen-label">Driver App</div>
-          <div class="phone-frame">
-            <img src="images/mobile.webp" alt="Driver App" />
+          <div class="mobile-col">
+            <div class="screen-label">Live Tracking</div>
+            <div class="phone-frame">
+              <img src="images/mb.png" alt="Driver App Tracking Started" />
+            </div>
           </div>
-
-          <!-- <div style="
-                margin-top: 55px;
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-              ">
-            <div style="
-                  background: #f8f8f8;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  padding: 8px 10px;
-                ">
-              <div style="
-                    font-size: 12px;
-                    font-weight: 600;
-                    color: #333;
-                    font-family: &quot;Space Grotesk&quot;, sans-serif;
-                    margin-bottom: 2px;
-                  ">
-                One Tap
-              </div>
-              <div style="font-size: 11px; color: #555; line-height: 1.4">
-                Start and Stop trips instantly with one tap !
-              </div>
-            </div>
-            <div style="
-                  background: #f8f8f8;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  padding: 8px 10px;
-                ">
-              <div style="
-                    font-size: 12px;
-                    font-weight: 600;
-                    color: #333;
-                    font-family: &quot;Space Grotesk&quot;, sans-serif;
-                    margin-bottom: 2px;
-                  ">
-                Offline Mode
-              </div>
-              <div style="font-size: 11px; color: #555; line-height: 1.4">
-                Record trips without data or internet !
-              </div>
-            </div>
-            <div style="
-                  background: #f8f8f8;
-                  border: 1px solid #e0e0e0;
-                  border-radius: 8px;
-                  padding: 8px 10px;
-                ">
-              <div style="
-                    font-size: 12px;
-                    font-weight: 600;
-                    color: #333;
-                    font-family: &quot;Space Grotesk&quot;, sans-serif;
-                    margin-bottom: 2px;
-                  ">
-                Team View
-              </div>
-              <div style="font-size: 11px; color: #555; line-height: 1.4">
-                See info on all organization drivers
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
+
     <!-- BOTTOM STRIP -->
     <!-- <div class="bottom-strip">
       <div class="strip-left">
@@ -227,6 +219,5 @@
       </div>
     </div>
   </div> -->
-</body>
-
+  </body>
 </html>

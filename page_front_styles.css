@@ -5,9 +5,11 @@
   --shadow-a4: 0 2px 12px rgba(0, 0, 0, 0.08);
   --bg-hero: linear-gradient(160deg, #fff 0%, #fffaf0 40%, #fff9f0 100%);
   --border-hero: #e8e8e8;
-  --bg-hero-glow: radial-gradient(circle,
-      rgba(0, 0, 0, 0.03) 0%,
-      transparent 65%);
+  --bg-hero-glow: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.03) 0%,
+    transparent 65%
+  );
   --text-main: #1a1a1a;
   --text-muted: #555;
   --text-light: #666;
@@ -55,12 +57,16 @@
   --text-platform: #444;
   --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(circle,
-      rgba(0, 0, 0, 0.02) 0%,
-      transparent 70%);
-  --bg-a4-after: radial-gradient(circle,
-      rgba(0, 0, 0, 0.02) 0%,
-      transparent 70%);
+  --bg-a4-before: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.02) 0%,
+    transparent 70%
+  );
+  --bg-a4-after: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.02) 0%,
+    transparent 70%
+  );
   --text-tagline: #555;
   --bg-divider: #e0e0e0;
   --text-section-label: #444;
@@ -109,9 +115,11 @@
   --shadow-a4: none;
   --bg-hero: linear-gradient(160deg, #0d1528 0%, #0b1020 40%, #0b0d1a 100%);
   --border-hero: transparent;
-  --bg-hero-glow: radial-gradient(circle,
-      rgba(0, 220, 150, 0.08) 0%,
-      transparent 65%);
+  --bg-hero-glow: radial-gradient(
+    circle,
+    rgba(0, 220, 150, 0.08) 0%,
+    transparent 65%
+  );
   --text-main: #ffffff;
   --text-muted: #7a8ba8;
   --text-light: #8a9bb8;
@@ -151,9 +159,11 @@
   --border-pill: rgba(255, 255, 255, 0.08);
   --text-pill: #aebdda;
   --dot-pill: #00dc96;
-  --bg-strip: linear-gradient(90deg,
-      rgba(0, 220, 150, 0.12) 0%,
-      rgba(0, 184, 200, 0.08) 100%);
+  --bg-strip: linear-gradient(
+    90deg,
+    rgba(0, 220, 150, 0.12) 0%,
+    rgba(0, 184, 200, 0.08) 100%
+  );
   --border-strip: rgba(0, 220, 150, 0.18);
   --text-strip-left: #c8d5e8;
   --text-strip-strong: #00dc96;
@@ -163,17 +173,23 @@
   --text-platform: #a7aeb9;
   --bg-pin: linear-gradient(135deg, #00dc96, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(circle,
-      rgba(0, 220, 150, 0.1) 0%,
-      transparent 70%);
-  --bg-a4-after: radial-gradient(circle,
-      rgba(60, 120, 255, 0.1) 0%,
-      transparent 70%);
+  --bg-a4-before: radial-gradient(
+    circle,
+    rgba(0, 220, 150, 0.1) 0%,
+    transparent 70%
+  );
+  --bg-a4-after: radial-gradient(
+    circle,
+    rgba(60, 120, 255, 0.1) 0%,
+    transparent 70%
+  );
   --text-tagline: #8a9bb8;
-  --bg-divider: linear-gradient(90deg,
-      #00dc96 0%,
-      rgba(0, 220, 150, 0.1) 60%,
-      transparent 100%);
+  --bg-divider: linear-gradient(
+    90deg,
+    #00dc96 0%,
+    rgba(0, 220, 150, 0.1) 60%,
+    transparent 100%
+  );
   --text-section-label: #00dc96;
   --border-section-label: transparent;
   --bg-price-card: rgba(255, 255, 255, 0.04);
@@ -433,13 +449,6 @@ body {
   font-weight: 500;
 }
 
-.mobile-col {
-  width: 140px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-}
-
 .phone-frame {
   background: var(--bg-phone);
   border: 1.5px solid var(--border-phone);
@@ -471,6 +480,59 @@ body {
 
 .dark .phone-frame img {
   filter: none;
+}
+
+/* Optimized Features Layout */
+.features-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+  padding: 40px 10px 0;
+}
+
+.feature-detail-card {
+  background: var(--bg-why-card);
+  border: 1px solid var(--border-why-card);
+  border-radius: 12px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s;
+}
+
+.feat-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.feat-desc {
+  font-size: 11.5px;
+  color: var(--text-p);
+  line-height: 1.5;
+}
+
+.mobile-col {
+  width: 165px;
+  /* Slightly wider for better presence */
+  flex-shrink: 0;
+}
+
+.phone-frame {
+  transition: box-shadow 0.3s;
+}
+
+/* Ensure the label stays consistent */
+.screen-label {
+  justify-content: center;
+  margin-left: 0;
+  margin-bottom: 15px;
+  font-size: 12px;
 }
 
 /* WHY CHOOSE */
@@ -576,7 +638,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .section-label {
@@ -617,6 +679,23 @@ body {
   background: var(--bg-price-card-feat);
   border-color: var(--border-price-card-feat);
   border-width: 2px;
+}
+
+.feat-badge {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00dc96;
+  color: #0b0d1a;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
 }
 
 .price-tier {
