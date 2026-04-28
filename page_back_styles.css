@@ -662,7 +662,8 @@ body {
 }
 
 .image-wrapper {
-  position: relative;   /* IMPORTANT */
+  position: relative;
+  /* IMPORTANT */
   width: 100%;
 }
 
@@ -682,9 +683,12 @@ body {
 /* Small overlapping image */
 .small-image {
   position: absolute;
-  top: 42px;     /* adjust */
-  left: 16px;    /* left side overlap */
-  width: 150px;  /* size */
+  top: 42px;
+  /* adjust */
+  left: 16px;
+  /* left side overlap */
+  width: 150px;
+  /* size */
   height: 280px;
   border-radius: 10px;
   overflow: hidden;
@@ -737,10 +741,13 @@ body {
     padding: 52px 52px 44px;
     transform: scale(0.94);
     transform-origin: top left;
+    margin-left: 20px;
   }
-  .image-wrapper{
+
+  .image-wrapper {
     margin-top: 10px;
   }
+
   .big-image {
     max-height: 340px;
   }
