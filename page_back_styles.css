@@ -1,103 +1,143 @@
 :root {
-  --bg-body: #f8f5f0;
-  --bg-a4: #fff;
-  --border-a4: #e0e0e0;
-  --shadow-a4: 0 2px 12px rgba(0, 0, 0, 0.08);
-  --bg-hero: linear-gradient(160deg, #fff 0%, #fffaf0 40%, #fff9f0 100%);
-  --border-hero: #e8e8e8;
-  --bg-hero-glow: radial-gradient(circle,
-      rgba(0, 0, 0, 0.03) 0%,
-      transparent 65%);
-  --text-main: #1a1a1a;
-  --text-muted: #555;
-  --text-light: #666;
-  --text-brand: #1a1a1a;
-  --accent-primary: #2563eb;
-  --bg-live: rgba(0, 0, 0, 0.04);
-  --border-live: #ccc;
-  --text-live: #333;
-  --dot-live: #333;
-  --text-eyebrow: #555;
-  --border-eyebrow: #e0e0e0;
-  --text-h1: #1a1a1a;
-  --text-h1-em: #333;
-  --text-h2: #1a1a1a;
-  --text-p: #555;
-  --text-stat-num: #1a1a1a;
-  --text-stat-num-span: #333;
-  --text-stat-label: #666;
-  --border-stat-divider: #e0e0e0;
-  --bg-screens: #fff;
-  --text-screen-label: #444;
-  --border-screen-label: #444;
-  --bg-frame: #fafafa;
-  --border-frame: #ddd;
-  --shadow-frame: 0 4px 16px rgba(0, 0, 0, 0.06);
-  --bg-frame-label: rgba(255, 255, 255, 0.95);
-  --border-frame-label: #ddd;
-  --text-frame-label: #444;
-  --bg-phone: #f5f5f5;
-  --border-phone: #ddd;
-  --shadow-phone: 0 4px 16px rgba(0, 0, 0, 0.08);
-  --bg-notch: #e8e8e8;
-  --border-notch: #ccc;
-  --bg-pill: #f8f8f8;
-  --border-pill: #e0e0e0;
-  --text-pill: #444;
-  --dot-pill: #333;
-  --bg-strip: #f9f7f4;
-  --border-strip: #e0e0e0;
-  --text-strip-left: #555;
-  --text-strip-strong: #1a1a1a;
-  --bg-cta: #1a1a1a;
-  --text-cta: #fff;
-  --border-cta: #000;
-  --text-platform: #444;
-  --text-notice: #000;
+  /* Notion Palette */
+  --bg-body: #f6f5f4;
+  --bg-a4: #ffffff;
+  --border-a4: rgba(0, 0, 0, 0.1);
+  --shadow-a4: rgba(0, 0, 0, 0.04) 0px 4px 18px, rgba(0, 0, 0, 0.02) 0px 0.8px 2.925px;
 
-  /* Additional back-page specific vars placed here so both files share one identical root */
-  --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
+  --bg-hero: #ffffff;
+  --border-hero: rgba(0, 0, 0, 0.1);
+  --bg-hero-glow: radial-gradient(circle, rgba(0, 117, 222, 0.02) 0%, transparent 65%);
+
+  --text-main: rgba(0, 0, 0, 0.95);
+  --text-muted: #615d59;
+  --text-light: #a39e98;
+  --text-brand: rgba(0, 0, 0, 0.95);
+
+  --accent-primary: #0075de;
+  /* Notion Blue */
+  --bg-live: #f2f9ff;
+  --border-live: rgba(0, 117, 222, 0.2);
+  --text-live: #0075de;
+  --dot-live: #0075de;
+
+  --text-eyebrow: #615d59;
+  --border-eyebrow: rgba(0, 0, 0, 0.1);
+
+  --text-h1: rgba(0, 0, 0, 0.95);
+  --text-h1-em: #0075de;
+  --text-h2: rgba(0, 0, 0, 0.95);
+  --text-p: #615d59;
+
+  --text-stat-num: rgba(0, 0, 0, 0.95);
+  --text-stat-num-span: #0075de;
+  --text-stat-label: #615d59;
+  --border-stat-divider: rgba(0, 0, 0, 0.1);
+
+  --bg-screens: #ffffff;
+  --text-screen-label: #615d59;
+  --border-screen-label: rgba(0, 0, 0, 0.1);
+
+  --bg-frame: #ffffff;
+  --border-frame: rgba(0, 0, 0, 0.1);
+  --shadow-frame: rgba(0, 0, 0, 0.04) 0px 4px 18px;
+
+  --bg-frame-label: rgba(255, 255, 255, 0.95);
+  --border-frame-label: rgba(0, 0, 0, 0.1);
+  --text-frame-label: #615d59;
+
+  --bg-phone: #ffffff;
+  --border-phone: rgba(0, 0, 0, 0.1);
+  --shadow-phone: rgba(0, 0, 0, 0.04) 0px 4px 18px;
+
+  --bg-notch: rgba(0, 0, 0, 0.1);
+  --border-notch: transparent;
+
+  --bg-pill: #f2f9ff;
+  --border-pill: rgba(0, 117, 222, 0.1);
+  --text-pill: #0075de;
+  --dot-pill: #0075de;
+
+  --bg-strip: #f6f5f4;
+  --border-strip: rgba(0, 0, 0, 0.1);
+  --text-strip-left: #615d59;
+  --text-strip-strong: rgba(0, 0, 0, 0.95);
+
+  --bg-cta: #0075de;
+  --text-cta: #ffffff;
+  --border-cta: transparent;
+
+  --text-platform: #615d59;
+  --text-notice: rgba(0, 0, 0, 0.95);
+
+  --bg-pin: #0075de;
   --opacity-pin: 1;
-  --text-tagline: #dddfe4;
-  --bg-divider: #e0e0e0;
-  --text-section-label: #444;
-  --border-section-label: #e8e8e8;
-  --bg-price-card: #fafafa;
-  --border-price-card: #ddd;
-  --bg-price-card-feat: #f0f0f0;
-  --border-price-card-feat: #bbb;
-  --text-price-tier: #444141;
-  --text-price-amount: #1a1a1a;
-  --text-price-amount-feat: #1a1a1a;
-  --text-price-unit: #666;
-  --bg-feat-badge: #1a1a1a;
-  --text-feat-badge: #fff;
-  --bg-feature-block: #fafafa;
-  --border-feature-block: #ddd;
-  --text-feature-title: #1a1a1a;
-  --bg-block-icon: #e8e8e8;
-  --bg-block-icon-web: rgba(37, 99, 235, 0.15);
-  --bg-block-icon-mob: rgba(0, 220, 150, 0.15);
+  --text-tagline: #615d59;
+  --bg-divider: rgba(0, 0, 0, 0.1);
+  --text-section-label: rgba(0, 0, 0, 0.95);
+  --border-section-label: rgba(0, 0, 0, 0.1);
+
+  --bg-teal-tint: #f0fbfb;
+  --bg-green-tint: #f2fcf3;
+  --bg-orange-tint: #fff8f2;
+  --bg-pink-tint: #fff5fb;
+  --bg-purple-tint: #f9f5ff;
+  --bg-blue-tint: #f2f9ff;
+  --bg-yellow-tint: #fffbed;
+
+  --border-teal-tint: rgba(42, 157, 153, 0.2);
+  --border-green-tint: rgba(26, 174, 57, 0.2);
+  --border-orange-tint: rgba(221, 91, 0, 0.2);
+  --border-purple-tint: rgba(57, 28, 87, 0.2);
+  --border-blue-tint: rgba(0, 117, 222, 0.2);
+  --border-pink-tint: rgba(255, 100, 200, 0.2);
+
+  --text-teal-tint: #2a9d99;
+  --text-green-tint: #1aae39;
+  --text-orange-tint: #dd5b00;
+  --text-purple-tint: #391c57;
+
+  --bg-price-card: #ffffff;
+  --border-price-card: rgba(0, 0, 0, 0.1);
+  --bg-price-card-feat: #f2f9ff;
+  --border-price-card-feat: #0075de;
+  --text-price-tier: #615d59;
+  --text-price-amount: rgba(0, 0, 0, 0.95);
+  --text-price-amount-feat: #0075de;
+  --text-price-unit: #a39e98;
+
+  --bg-feat-badge: #0075de;
+  --text-feat-badge: #ffffff;
+
+  --bg-feature-block: #ffffff;
+  --border-feature-block: rgba(0, 0, 0, 0.1);
+  --text-feature-title: rgba(0, 0, 0, 0.95);
+  --bg-block-icon: #f6f5f4;
+  --bg-block-icon-web: rgba(0, 117, 222, 0.1);
+  --bg-block-icon-mob: rgba(0, 117, 222, 0.1);
   --border-block-icon: transparent;
-  --text-feature-sub: #555;
-  --text-feat-list: #444;
-  --dot-feat-list: #2563eb;
-  --text-feat-strong: #1a1a1a;
-  --bg-why-card: #fafafa;
-  --border-why-card: #ddd;
-  --bg-why-icon: rgba(77, 209, 84, 0.911);
+
+  --text-feature-sub: #615d59;
+  --text-feat-list: #615d59;
+  --dot-feat-list: #0075de;
+  --text-feat-strong: rgba(0, 0, 0, 0.95);
+
+  --bg-why-card: #ffffff;
+  --border-why-card: rgba(0, 0, 0, 0.1);
+  --bg-why-icon: #f2f9ff;
   --border-why-icon: transparent;
-  --text-why-icon: #2563eb;
-  --text-why-p: #555;
-  --text-why-strong: #1a1a1a;
-  --border-footer: #e0e0e0;
-  --text-footer-left: #1a1a1a;
-  --text-footer-span: #2563eb;
-  --text-footer-right: #555;
-  --text-footer-right-bold: #353333;
-  --bg-cta-pill: #1a1a1a;
-  --text-cta-pill: #fff;
-  --border-cta-pill: #000;
+  --text-why-icon: #0075de;
+  --text-why-p: #615d59;
+  --text-why-strong: rgba(0, 0, 0, 0.95);
+
+  --border-footer: rgba(0, 0, 0, 0.1);
+  --text-footer-left: rgba(0, 0, 0, 0.95);
+  --text-footer-span: #0075de;
+  --text-footer-right: #615d59;
+  --text-footer-right-bold: rgba(0, 0, 0, 0.95);
+  --bg-cta-pill: #0075de;
+  --text-cta-pill: #ffffff;
+  --border-cta-pill: transparent;
 }
 
 .dark {
@@ -212,11 +252,13 @@ body {
   align-items: flex-start;
   min-height: 100vh;
   padding: 40px 20px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", -apple-system, system-ui, "Segoe UI", Helvetica, sans-serif;
   color: var(--text-main);
   transition:
     background 0.3s,
     color 0.3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .a4 {
@@ -273,11 +315,11 @@ body {
 }
 
 .app-name {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: var(--text-brand);
-  letter-spacing: -0.5px;
+  letter-spacing: -1.2px;
   line-height: 1;
 }
 
@@ -322,19 +364,21 @@ body {
 }
 
 .hero h2 {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--text-h2);
-  margin-bottom: 8px;
-  line-height: 1.3;
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-bottom: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.625px;
 }
 
 .hero p {
-  font-size: 15px;
+  font-size: 16px;
   color: var(--text-p);
-  line-height: 1.65;
-  max-width: 90%;
+  line-height: 1.5;
+  max-width: 95%;
+  font-weight: 400;
 }
 
 /* STATS ROW */
@@ -353,10 +397,11 @@ body {
 }
 
 .stat-num {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--text-stat-num);
+  letter-spacing: -0.25px;
 }
 
 .stat-num span {
@@ -387,16 +432,15 @@ body {
 }
 
 .section-label {
-  font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(12px, 0.9vh, 16px);
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--text-section-label);
-  margin-bottom: 14px;
-  border-bottom: 1px solid var(--border-section-label);
-  padding-bottom: 6px;
-  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  padding-bottom: 0;
+  display: block;
 }
 
 .dark .section-label {
@@ -420,9 +464,22 @@ body {
   transition: all 0.2s;
 }
 
+.price-card:nth-child(1) {
+  background: var(--bg-teal-tint);
+  border-color: var(--border-teal-tint);
+}
+
+.price-card:nth-child(2) {
+  background: var(--bg-purple-tint);
+  border-color: var(--border-purple-tint);
+}
+
+.price-card:nth-child(3) {
+  background: var(--bg-blue-tint);
+  border-color: var(--accent-primary);
+}
+
 .price-card.featured {
-  background: var(--bg-price-card-feat);
-  border-color: var(--border-price-card-feat);
   border-width: 2px;
 }
 
@@ -434,12 +491,13 @@ body {
 }
 
 .price-amount {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 28px;
   font-weight: 700;
   color: var(--text-price-amount);
   line-height: 1;
   margin-bottom: 4px;
+  letter-spacing: -0.5px;
 }
 
 .price-card.featured .price-amount {
@@ -464,15 +522,39 @@ body {
 }
 
 .pill {
-  background: var(--bg-pill);
   border: 1px solid var(--border-pill);
   border-radius: 20px;
   padding: 6px 14px;
   font-size: 11px;
-  color: var(--text-pill);
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+
+.pill:nth-child(1) {
+  background: var(--bg-blue-tint);
+  color: var(--accent-primary);
+}
+
+.pill:nth-child(2) {
+  background: var(--bg-teal-tint);
+  color: var(--text-teal-tint);
+}
+
+.pill:nth-child(3) {
+  background: var(--bg-orange-tint);
+  color: var(--text-orange-tint);
+}
+
+.pill:nth-child(4) {
+  background: var(--bg-purple-tint);
+  color: var(--text-purple-tint);
+}
+
+.pill:nth-child(5) {
+  background: var(--bg-pink-tint);
+  color: var(--text-pink-tint);
 }
 
 .pill-dot {
@@ -492,21 +574,45 @@ body {
 }
 
 .feature-block {
-  background: var(--bg-feature-block);
-  border: 1px solid var(--border-feature-block);
+  border: 1px solid;
   border-radius: 12px;
   padding: 20px;
 }
 
+.feature-block:nth-child(1) {
+  background: var(--bg-blue-tint);
+  border-color: var(--border-blue-tint);
+}
+
+.feature-block:nth-child(1) .block-icon {
+  background: var(--accent-primary);
+  color: #fff;
+}
+
+.feature-block:nth-child(2) {
+  background: var(--bg-teal-tint);
+  border-color: var(--border-teal-tint);
+}
+
+.feature-block:nth-child(2) .block-icon {
+  background: var(--text-teal-tint);
+  color: #fff;
+}
+
+.feature-block:nth-child(2) .feature-block-title {
+  color: var(--text-teal-tint);
+}
+
 .feature-block-title {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-feature-title);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  letter-spacing: -0.25px;
 }
 
 .block-icon {
