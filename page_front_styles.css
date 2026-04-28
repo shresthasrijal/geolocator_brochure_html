@@ -5,11 +5,9 @@
   --shadow-a4: 0 2px 12px rgba(0, 0, 0, 0.08);
   --bg-hero: linear-gradient(160deg, #fff 0%, #fffaf0 40%, #fff9f0 100%);
   --border-hero: #e8e8e8;
-  --bg-hero-glow: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.03) 0%,
-    transparent 65%
-  );
+  --bg-hero-glow: radial-gradient(circle,
+      rgba(0, 0, 0, 0.03) 0%,
+      transparent 65%);
   --text-main: #1a1a1a;
   --text-muted: #555;
   --text-light: #666;
@@ -57,16 +55,12 @@
   --text-platform: #444;
   --bg-pin: linear-gradient(135deg, #2563eb, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.02) 0%,
-    transparent 70%
-  );
-  --bg-a4-after: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.02) 0%,
-    transparent 70%
-  );
+  --bg-a4-before: radial-gradient(circle,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 70%);
+  --bg-a4-after: radial-gradient(circle,
+      rgba(0, 0, 0, 0.02) 0%,
+      transparent 70%);
   --text-tagline: #555;
   --bg-divider: #e0e0e0;
   --text-section-label: #444;
@@ -115,11 +109,9 @@
   --shadow-a4: none;
   --bg-hero: linear-gradient(160deg, #0d1528 0%, #0b1020 40%, #0b0d1a 100%);
   --border-hero: transparent;
-  --bg-hero-glow: radial-gradient(
-    circle,
-    rgba(0, 220, 150, 0.08) 0%,
-    transparent 65%
-  );
+  --bg-hero-glow: radial-gradient(circle,
+      rgba(0, 220, 150, 0.08) 0%,
+      transparent 65%);
   --text-main: #ffffff;
   --text-muted: #7a8ba8;
   --text-light: #8a9bb8;
@@ -159,11 +151,9 @@
   --border-pill: rgba(255, 255, 255, 0.08);
   --text-pill: #aebdda;
   --dot-pill: #00dc96;
-  --bg-strip: linear-gradient(
-    90deg,
-    rgba(0, 220, 150, 0.12) 0%,
-    rgba(0, 184, 200, 0.08) 100%
-  );
+  --bg-strip: linear-gradient(90deg,
+      rgba(0, 220, 150, 0.12) 0%,
+      rgba(0, 184, 200, 0.08) 100%);
   --border-strip: rgba(0, 220, 150, 0.18);
   --text-strip-left: #c8d5e8;
   --text-strip-strong: #00dc96;
@@ -173,23 +163,17 @@
   --text-platform: #a7aeb9;
   --bg-pin: linear-gradient(135deg, #00dc96, #00b8c8);
   --opacity-pin: 1;
-  --bg-a4-before: radial-gradient(
-    circle,
-    rgba(0, 220, 150, 0.1) 0%,
-    transparent 70%
-  );
-  --bg-a4-after: radial-gradient(
-    circle,
-    rgba(60, 120, 255, 0.1) 0%,
-    transparent 70%
-  );
+  --bg-a4-before: radial-gradient(circle,
+      rgba(0, 220, 150, 0.1) 0%,
+      transparent 70%);
+  --bg-a4-after: radial-gradient(circle,
+      rgba(60, 120, 255, 0.1) 0%,
+      transparent 70%);
   --text-tagline: #8a9bb8;
-  --bg-divider: linear-gradient(
-    90deg,
-    #00dc96 0%,
-    rgba(0, 220, 150, 0.1) 60%,
-    transparent 100%
-  );
+  --bg-divider: linear-gradient(90deg,
+      #00dc96 0%,
+      rgba(0, 220, 150, 0.1) 60%,
+      transparent 100%);
   --text-section-label: #00dc96;
   --border-section-label: transparent;
   --bg-price-card: rgba(255, 255, 255, 0.04);
