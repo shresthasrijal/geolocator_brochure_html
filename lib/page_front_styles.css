@@ -108,7 +108,7 @@
   --text-price-tier: #615d59;
   --text-price-amount: rgba(0, 0, 0, 0.95);
   --text-price-amount-feat: #0075de;
-  --text-price-unit: #a39e98;
+  --text-price-unit: #464544;
 
   --bg-feat-badge: #0075de;
   --text-feat-badge: #ffffff;
@@ -323,7 +323,7 @@ body {
   border: 1px solid var(--border-live);
   border-radius: 20px;
   padding: 5px 14px;
-  font-size: 11.5px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-live);
   font-family: "Space Grotesk", sans-serif;
@@ -781,7 +781,7 @@ body {
   font-size: 14px;
   color: var(--text-price-tier);
   margin-bottom: 4px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .price-amount {
@@ -800,7 +800,8 @@ body {
 }
 
 .price-unit {
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: 600;
   color: var(--text-price-unit);
 }
 
