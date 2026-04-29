@@ -283,7 +283,7 @@ body {
   padding: 16px 52px 4px;
   position: relative;
   flex-shrink: 0;
-  border-bottom: 1px solid var(--border-hero);
+  /* border-bottom: 1px solid var(--border-hero); */
 }
 
 /* NAV BAR MOCK */
